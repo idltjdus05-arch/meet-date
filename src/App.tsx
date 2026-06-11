@@ -38,6 +38,7 @@ const friendNicknames = [
   "땃쥐",
   "세삥",
   "아혀니",
+  "골댕이",
 ];
 
 function toIsoDate(date: Date) {
