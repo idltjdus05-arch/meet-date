@@ -617,3 +617,53 @@ p {
 .nickname-select option {
   text-align: center;
 }
+/* 모바일 첫 화면 가독성 개선 */
+@media (max-width: 560px) {
+  .app {
+    padding: 70px 14px 24px;
+    align-items: flex-start;
+  }
+
+  .invite-card {
+    width: min(94vw, 390px);
+    min-height: auto;
+    padding: 54px 18px 30px;
+    border-radius: 26px;
+  }
+
+  .invite-card .samoyed-bounce {
+    width: 88px;
+    height: 88px;
+    margin: -88px auto 24px;
+  }
+
+  .invite-card h1 {
+    font-size: 27 px;
+    line-height: 1.28;
+    letter-spacing: -1px;
+    word-break: keep-all;
+  }
+
+  .invite-card p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.45;
+    word-break: keep-all;
+  }
+
+  .invite-card .button-area {
+    height: 110px;
+    margin-top: 22px;
+    padding-top: 8px;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .invite-card .yes-button,
+  .invite-card .no-button {
+    width: 86px;
+    height: 48px;
+    font-size: 19px;
+    border-radius: 14px;
+  }
+}
