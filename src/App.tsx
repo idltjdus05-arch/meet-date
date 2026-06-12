@@ -485,7 +485,7 @@ function AdminPage() {
     return Object.entries(countMap)
       .map(([date, count]) => ({ date, count }))
       .sort((a, b) => b.count - a.count || a.date.localeCompare(b.date))
-      .slice(0, 5);
+      .slice(0, 7);
   }, [responses]);
 
   const placeResults = useMemo(() => {
@@ -504,7 +504,7 @@ function AdminPage() {
     <section className="admin-page">
       <div className="admin-header">
         <h1>관리자 결과 확인</h1>
-        <p>친구들이 가장 많이 선택한 날짜 TOP 5를 볼 수 있어.</p>
+        <p>친구들이 가장 많이 선택한 날짜 TOP 7를 볼 수 있어.</p>
 
         <button className="submit-button" onClick={fetchResponses}>
           새로고침
@@ -523,7 +523,7 @@ function AdminPage() {
           </div>
 
           <div className="admin-card">
-            <h2>날짜 TOP 5</h2>
+            <h2>날짜 TOP 7</h2>
 
             {dateTop5.length === 0 ? (
               <p>아직 제출된 날짜가 없어.</p>
